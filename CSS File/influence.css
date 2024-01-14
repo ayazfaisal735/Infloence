@@ -68,7 +68,7 @@ nav li a {
 
 #banner .banner-info h1 {
       color: #3A3A3A;
-      font-size: 52px;
+      font-size: 3.25em;
       font-style: normal;
       font-weight: 700;
       line-height: 70px;
@@ -89,7 +89,8 @@ nav li a {
       padding-right: 180px;
 }
 
-#banner .btn {
+#banner .btn,
+#feature .btn {
       color: #FFF;
       font-feature-settings: 'clig' off, 'liga' off;
       font-family: Poppins;
@@ -102,4 +103,232 @@ nav li a {
       background: #E02C6D;
       margin-top: 30px;
       display: inline-block;
+}
+
+#banner .advertise {
+      text-align: center;
+      margin-top: 140px;
+
+}
+
+#collection h4 {
+      text-align: center;
+      font-family: Poppins;
+      font-size: 28px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 70px;
+      margin-bottom: 30px;
+}
+
+#banner .advertise img {
+      margin-left: 60px;
+}
+
+#collection .collection-items {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      row-gap: 40px;
+      column-gap: 40px;
+}
+
+#collection .collection-info {
+      border-radius: 10px;
+      background: #FFF;
+      box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+}
+
+#collection .collection-img {
+      text-align: center;
+      padding-top: 16px;
+}
+
+#collection .collection-details {
+      padding: 15px;
+}
+
+#collection .collection-details h2 {
+      color: #18191F;
+      font-size: 28px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 40px;
+}
+
+#collection .collection-details h3 {
+      font-family: Inter;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 150%;
+}
+
+#collection .collection-details p {
+      color: #787885;
+      font-family: Inter;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 143%;
+      letter-spacing: 0.252px;
+}
+
+#feature {
+      margin-top: 130px;
+      margin-bottom: 120px;
+}
+
+#feature .row {
+      align-items: center;
+}
+
+#feature h2 {
+      color: #0A0826;
+      font-family: Poppins;
+      font-size: 38px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 60px;
+
+}
+
+#feature p {
+      color: #6C6C6C;
+      font-feature-settings: 'clig' off, 'liga' off;
+      font-family: Poppins;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 28px;
+
+}
+
+#feature .feature-info {
+      padding-left: 96px;
+}
+
+footer {
+      background: #0A0826;
+}
+
+footer .container {
+      text-align: center;
+      padding: 60px 0;
+}
+
+footer .container h2 {
+      color: #FFF;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+}
+
+footer .container p {
+      color: #D9DBE1;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 24px;
+}
+
+footer i {
+      color: #FFF;
+      margin: 10px;
+      font-size: 20px;
+}
+/* responsive style */
+@media screen and (max-width:596px) {
+      .container{
+            width: 100%;
+      }
+      nav .row {
+            flex-direction: column;
+      }
+
+      nav .container {
+            width: 100%;
+      }
+
+      nav h2 {
+            text-align: center;
+      }
+
+      nav .navbar {
+            flex-direction: row;
+            justify-content: center;
+            margin-top: 20px;
+            gap: 15px;
+            padding: 0 10px;
+      }
+
+      nav ul {}
+
+      #banner{
+            margin-bottom: 0;
+      }
+      
+
+      #banner .row {
+            flex-direction: column-reverse;
+      }
+
+      #banner img {
+            width: 200px;
+            height: 190px;
+      }
+
+      #banner .banner-info {
+            text-align: center;
+      }
+
+      #banner .banner-info h1 {
+            font-size: 28px;
+            line-height: normal;
+      }
+
+      #banner .banner-info p {
+            padding-right: 0;
+            padding: 10px 25px;
+            font-size: 14px;
+      }
+
+      #banner .advertise {
+            text-align: start;
+            margin-top: 20px;
+            text-align: center;
+            
+      }
+
+      #banner .advertise img {
+            width: 33.381px;
+            height: 18.838px;
+            margin-left: 40px;
+      
+      }
+      #collection .collection-items{
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            margin: 0 10px;
+      }
+      #feature .row{
+            flex-direction:column-reverse;
+      }
+      #feature .feature-info{
+            padding-left: 0;
+            text-align: center;
+            padding: 10px 29px;
+      }
+      #feature .feature-info h2{
+            font-size: 24px;
+            line-height: normal;
+      }
+      #feature .feature-img img{
+            width: 299px;
+            height: 188px;
+            margin-top: 10px;
+      }
+      #feature{
+            margin-bottom: 20px;
+      }
 }
